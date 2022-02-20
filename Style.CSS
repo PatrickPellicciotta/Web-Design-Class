@@ -1,0 +1,19 @@
+body{
+    background-color: grey;
+}
+h1{
+    color: goldenrod;
+    font-style: italic;
+    font-size: xx-large;
+}
+h2{
+    color: goldenrod;
+}
+p{
+    font-size: x-large;
+    color: goldenrod;
+}
+header{
+    color: goldenrod;
+    font-size: large;
+}
