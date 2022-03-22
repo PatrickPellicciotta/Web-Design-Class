@@ -1,8 +1,26 @@
 table{
     background: #333;
     color: #fff;
+    padding: 10px;
+    border: 5px solid red;
+    font-size: x-large;
     
 }
-th, td{
-    padding: 13px;
+#show th, #show td{
+    padding: 10px;
+    
+}
+
+.cell{
+    border: 3px solid white;
+    border-collapse: collapse;
+    font-size: large;
+    padding: 5px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    width: auto;
+    letter-spacing: .1ch;
+    margin: 0;
 }
