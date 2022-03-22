@@ -12,26 +12,82 @@
     <header>
         <link rel="stylesheet" href="Style.css">
     </header>
-    <table id="mytable">
-        <tr>
-            <td>Row1 cell1</td>
-            <td>Row1 cell2</td>
-        </tr>
-    </table>
-    <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value=""><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value=""><br>
-        <label for="number">Age:</label><br>
-        <input type="number" id="age" age="age" value=""><br>
-        <label for="school">School:</label><br>
-        <input type="text" id="School" name="School" value=""><br>
-        <label for="Program">Program:</label><br>
-        <input type="text" id="Program" name="Program" value="">
-    </form>
-    <script>
+    <center>
+        <table id="show">
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td>last Name:</td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" id="age" age="age"></td>
+            </tr>
+            <tr>
+                <td>School:</td>
+                <td><input type="text" id="School" name="School"></td>
+            </tr>
+            <tr>
+                <td>Program:</td>
+                <td><input type="text" id="Program" name="Program"></td>
+            </tr>
+            <tr id="btn">
+                <td colspan="2"> <input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+            </tr>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>last Name</th>
+                    <th>age</th>
+                    <th>School</th>
+                    <th>Program</th>
+                </tr>
+            </thead>
 
+        </table>
+        </form>
+    </center>
+    <script>
+        var list1 = [];
+        var list2 = [];
+        var list3 = [];
+        var list4 = [];
+        var list5 = [];
+
+        var n = 1;
+        var x = 0;
+
+        function AddRow() {
+
+            var addrow = document.getElementById("show");
+            var newrow = addrow.insertrow(n);
+
+            list1[x] = document.getElementById("fname").value;
+            list2[x] = document.getElementById("lname").value;
+            list3[x] = document.getElementById("age").value;
+            list4[x] = document.getElementById("School").value;
+            list5[x] = document.getElementById("Program").value;
+
+            var cell1 = newrow.instertcell(0);
+            var cell2 = newrow.instertcell(1);
+            var cell3 = newrow.instertcell(2);
+            var cell4 = newrow.instertcell(3);
+            var cell5 = newrow.instertcell(4);
+
+            cel1.innerHTML = list1[x];
+            cel2.innerHTML = list2[x];
+            cel3.innerHTML = list3[x];
+            cel4.innerHTML = list4[x];
+            cel5.innerHTML = list5[x];
+
+            n++;
+            x++;
+        }
     </script>
 </body>
 
